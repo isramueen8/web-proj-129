@@ -1,17 +1,16 @@
 extends ../layout
 
 block content 
-    h1 Add item to your Cart
+    h1 Add products to Food Cart
     - var total=0
     table(class="table") 
         thead 
             tr  
                 th Item Name
                 th Item Price
-                th City
-                th Location
-                th More Details
-                th Actions
+                th Weight
+                th Quantity
+                th Suggestions
         each item in cart
             - total += Number(item.price)
             tbody
