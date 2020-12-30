@@ -4,7 +4,7 @@ extends ../layout
 block content
     .row
         .col-md-6
-            h1 Items List
+            h1 Food Inventory
         .col-md-6
             a(href="/products/add" class="btn btn-primary float-right") Add Item
         table.table
@@ -12,9 +12,9 @@ block content
                 tr
                     th Item Name
                     th Item Price
-                    th Company
-                    th Location
-                    th More Details
+                    th Weight
+                    th Food Type
+                    th Suggestions
             tbody
                 each product in products
                     tr 
@@ -26,4 +26,4 @@ block content
                         td  
                             a(href="/products/delete/"+product._id    class="btn btn-danger") Delete
                             a(href="/products/edit/"+product._id    class="btn btn-info") Edit
-                            a(href="/products/cart/"+product._id    class="btn btn-info ml-3") Add To Cart
+                            a(href="/products/cart/"+product._id    class="btn btn-info ml-3") Add To Basket
