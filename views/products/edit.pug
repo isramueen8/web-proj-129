@@ -2,22 +2,22 @@ extends ../layout
 
 
 block content
-    h1 Edit Item
+    h1 Edit Product
     form(action="/products/edit/"+product._id, method="post")
         div(class="form-group")
-            lable(for="name") Item Name
+            lable(for="name") Product Name
             input(type="text" ,class="form-control" ,id="name" ,name="name" ,value= product.name)
         div(class="form-group")
-            lable(for="price") Price of Item
+            lable(for="price") Price of Product
             input(type="text" ,class="form-control" ,id="price" ,name="price" ,value= product.price)
         div(class="form-group")
-            lable(for="city") City
+            lable(for="city") Weight
             input(type="text" ,class="form-control" ,id="city" ,name="city" ,value= product.city)
         div(class="form-group")
-            lable(for="location") Location
+            lable(for="location") Food Type
             input(type="text" ,class="form-control" ,id="location" ,name="location" ,value= product.locaton)
         div(class="form-group")
-            lable(for="detail") More Details (if any)
+            lable(for="detail") Suggestions
             input(type="text" ,class="form-control" ,id="detail" ,name="detail" ,value= product.detail)
         input(type="submit" ,class="btn btn-primary")
     
